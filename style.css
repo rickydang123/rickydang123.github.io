@@ -1,0 +1,22 @@
+body {
+    background-color: lightgray;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+.list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
