@@ -7,28 +7,81 @@ body {
 h1 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: blue
+    font-size: 40px;
+    color: blue;
 }
 h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    color: lightblue
+    font-size: 25px;
+    color: red;
+    height: 10px;
+}
+h3 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: purple;
 }
 p {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 10px;
-    color: lightcyan
+    font-size: 20px;
+    color: green;
 }
 .list {
     display: flex;
     justify-content: center;
     width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: orange;
 }
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+button {
+    background-color: rgb(40, 42, 43);
+    color: white;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+a.one:link {
+    text-decoration: none;
+    color: blue;
+  }
+a.one:visited {
+    text-decoration: none;
+    color: green;
+  }
+a.one:hover {
+    text-decoration: underline;
+    color: red;
+  }
+a.one:active {
+    text-decoration: underline;
+    color: yellow;
+  }
+table, th, td {
+    border: 1px solid;
+    margin: 25px 25px 50px 399px;
+  }
+table {
+    font-family: 'Times New Roman', Times, serif;
+    width: 40%;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+ul {
+    list-style-type: square;
+    height: 25px;
+}
+ol {
+    list-style-type: upper-roman;
+    height: 90px;
 }
