@@ -1,5 +1,5 @@
 body {
-    background-color: lightgray;
+    background-color: #505050;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     margin: 25px 50px 75px 100px;
@@ -8,13 +8,13 @@ h1 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
-    color: blue;
+    color: rgba(0, 60, 255, 0.822);
 }
 h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
-    color: red;
+    color: rgb(255, 255, 255);
     margin: 10px 25px 10px 25px
 }
 h3 {
@@ -29,6 +29,12 @@ p {
     font-size: 20px;
     color: green;
 }
+p1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: turquoise
+}
 .list {
     display: flex;
     justify-content: center;
@@ -39,13 +45,24 @@ p {
 }
 img {
     display: block;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
+    width:200px;height:200px;
 }
-button {
+.button1 {
     background-color: rgb(40, 42, 43);
     color: white;
     font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button2 {
+    background-color: rgb(40, 42, 43);
+    color: white;
+    font-weight: bold;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -67,8 +84,7 @@ a:active {
   }
 table, th, td {
     border: 1px solid;
-    margin: 30px 25px 30px 475px;
-
+    margin: 70px 25px 30px 475px;
   }
 table {
     font-family: 'Times New Roman', Times, serif;
@@ -85,4 +101,24 @@ ul {
 ol {
     list-style-type: upper-roman;
     height: 100px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.topnav a.active {
+    background-color: #808080;
+    color: white;
 }
