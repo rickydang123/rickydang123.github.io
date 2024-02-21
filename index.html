@@ -5,14 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
-  <link rel="stylesheet" type=""text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="main.js"></script>
 </head>
+
+<div class="topnav">
+  <a class="active" href="#home" onclick="openLink('link1')">Home</a>
+  <a href="about.html" onclick="openLink('link2')">About</a>
+  <a href="#contact" onclick="openLink('link3')">Contact</a>
+</div>
 
 <h1>Hi, I'm Ricky!</h1>
 
 <h2>Welcome to my site.</h2>
 
-<img src="https://media.licdn.com/dms/image/D5603AQHc1qbs5wv2gw/profile-displayphoto-shrink_800_800/0/1681352302268?e=1712188800&v=beta&t=2RN4uX3BIKg-HLs7Lk1OuKJ6eKrnmfKS7CnEEsx9GlA" alt="Profile">
+<img src="https://media.licdn.com/dms/image/D5603AQHc1qbs5wv2gw/profile-displayphoto-shrink_800_800/0/1681352302268?e=1712188800&v=beta&t=2RN4uX3BIKg-HLs7Lk1OuKJ6eKrnmfKS7CnEEsx9GlA" 
+    onclick="enlargeImg()"
+    id = "img1" />
 
 <table>
   <tr>
@@ -21,49 +30,15 @@
   </tr>
   <tr>
     <td><p><b><a href="https://www.torontomu.ca/">TMU Website</a></b></p></td>
-    <td>Visit Toronto Metropolitan University's main homepage</td>
+    <td>Visit Toronto Metropolitan University's Main Homepage</td>
   </tr>
 </table>
 
-<h2>Education:</h2>
-<div class="list">
-	<ul>
-		<li>Riverdale Collegiate Institute: 2015-2019</li>
-    <li>Toronto Metropolitan University: 2019-Present</li>
-	</ul>
-</div>
+<button class = "button2" onclick="DisplayText()">Click here to enter your name!</button>
 
-<h2>About Me</h2>
-
-<div style="text-align:center">
-<button type="button" onclick="myFunction()">Click here to find out!</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() { 
-  document.getElementById("demo").innerHTML = "I am currently in my 5th year studying for a Bachelor degree majoring in Business Technology Management at Toronto Metropolitan University.";
-}
-</script>
-
-</div>
-
-<h2>Key courses</h2>
-<div class="list">
-	<ol>
-		<li>Systems Analysis and Design</li>
-    <li>Fundamentals of Programing</li>
-    <li>Business Intelligence and Analytics</li>
-    <li>Computer-Enabled Problem Solving</li>
-    <li>Data and Information Management</li>
-	</ol>
-</div>
-<h2>Extra-Curriculars</h2>
-<p> I was a part of the Ultimate Frisbee Team in Highschool and also took part in the Strings Orchestra as a violinist.</p>
+<p id ="name"></p>
 
 <h3>Thank you for visiting!</h3>
-
-</div>
 
 </body>
 
