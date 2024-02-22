@@ -5,7 +5,7 @@ function myFunction(){
 function DisplayText(){
     let person = prompt("Please enter your name", "Enter name here");
     if (person != null) {
-      document.getElementById("name").innerHTML = "Thank you for visiting " + person + ", hope enjoyed your stay!";
+      document.getElementById("name").innerHTML = "Thank you for visiting " + person + ", hope you enjoyed your stay!";
     }
 }
 
