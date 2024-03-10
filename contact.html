@@ -6,10 +6,10 @@
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <script src="main.js"></script>
+  <script src="form.js"></script>
 </head>
 
-<h1>NOT COMPLETE!! STILL IN TESTING PHASE!!</h1>
+<h1>Contact Me</h1>
 
 <div class="topnav">
   <a href="index.html">Home</a>
@@ -26,26 +26,30 @@
 </div>
 
 <div class="container1">
- <!-- <form action="/action_page.php"> --> 
+ <form onsubmit="storeData(event)">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+    <input type="text" id="fname" name="firstname" required>
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="lname" name="lastname" required>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required>
 
     <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Canada</option>
-      <option value="canada">United States</option>
-      <option value="usa">Australia</option>
-      <option value="usa">United Kingdom</option>
-      <option value="usa">Other</option>
+    <select id="country" name="country" required>
+      <option value="canada">Canada</option>
+      <option value="usa">United States</option>
+      <option value="Australia">Australia</option>
+      <option value="united kingdon">United Kingdom</option>
+      <option value="other">Other</option>
     </select>
 
     <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" style="height:200px" required></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" onclick="storeData(event)">
+    <input type="reset">
   </form>
 </div>
 
