@@ -1,87 +1,196 @@
 body {
-    background-color: lightgray;
+    background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     margin: 25px 50px 75px 100px;
 }
 h1 {
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    color: blue;
+    font-size: 25px;
+    color: rgb(179, 159, 134);
 }
 h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
-    color: red;
-    height: 10px;
+    color: rgb(255, 255, 255);
+    margin: 10px 25px 10px 25px
 }
 h3 {
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    color: purple;
+    font-size: 60px;
+    color: rgb(179, 159, 134);
+    text-align: center;
 }
-p {
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
     font-size: 20px;
-    color: green;
+    color: rgb(179, 159, 134)
+}
+.p1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(179, 159, 134);
 }
 .list {
     display: flex;
     justify-content: center;
     width: 100%;
+    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: orange;
+    color: rgb(179, 159, 134);
 }
 img {
+    max-width: 50%;
+    max-height: 25%;
+    display: inline;
+    float: right;
+}
+.button1 {
+    background-color: rgb(40, 42, 43);
+    color: rgb(179, 159, 134);
+    font-weight: bold;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-button {
+.button2 {
     background-color: rgb(40, 42, 43);
-    color: white;
+    color: rgb(179, 159, 134);
     font-weight: bold;
+    display: block;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
-a.one:link {
+a:link {
     text-decoration: none;
-    color: blue;
+    color: #e1e3e2;
   }
-a.one:visited {
+a:visited {
     text-decoration: none;
-    color: green;
+    color: #221e1c;
   }
-a.one:hover {
+a:hover {
     text-decoration: underline;
-    color: red;
+    color: #b4a79e;
   }
-a.one:active {
+a:active {
     text-decoration: underline;
-    color: yellow;
+    color: #926c44;
   }
 table, th, td {
-    border: 1px solid;
-    margin: 25px 25px 50px 399px;
+    border: 2px solid rgb(179, 159, 134);
+    border-collapse: collapse;
   }
 table {
     font-family: 'Times New Roman', Times, serif;
     width: 40%;
-    border-collapse: collapse;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(179, 159, 134);
 }
 ul {
     list-style-type: square;
-    height: 25px;
+    height: 30px;
 }
 ol {
     list-style-type: upper-roman;
-    height: 90px;
+    height: 100px;
 }
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+.topnav a:hover, .dropdown:hover .dropbtn  {
+    background-color: #ddd;
+    color: black;
+  }
+.topnav a.active {
+    background-color: rgb(179, 159, 134);
+    color: white;
+}
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: rgb(179, 159, 134);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: rgb(179, 159, 134);
+  }
+  .container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }

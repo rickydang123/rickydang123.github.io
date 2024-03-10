@@ -5,12 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
-  <link rel="stylesheet" type=""text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="main.js"></script>
 </head>
 
-<h1>Hi, I'm Ricky!</h1>
+<h1>Ricky's Portfolio</h1>
 
-<img src="https://media.licdn.com/dms/image/D5603AQHc1qbs5wv2gw/profile-displayphoto-shrink_800_800/0/1681352302268?e=1712188800&v=beta&t=2RN4uX3BIKg-HLs7Lk1OuKJ6eKrnmfKS7CnEEsx9GlA" alt="Profile">
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class = "dropbtn">More
+      <i class = "fa fa-caret-down"></i>
+    </button>
+    <div class = "dropdown-content">
+      <a href ="contact.html">Contact Me</a>
+      <a href ="https://www.linkedin.com/in/rickydang25/">Linkedin</a>
+    </div>
+  </div>  
+</div>
+
+<div class = "container">
+  <div class = "text">
+    <h3>Passionate <br />Analytics <br />Student</h3>
+  </div>
+  <div class = "image">
+  <img src="image/Linkedin.jpg" onclick="enlargeImg()" id = "img1" />
+  </div>
+</div>
 
 <table>
   <tr>
@@ -23,46 +45,9 @@
   </tr>
 </table>
 
-<h2>Education:</h2>
-<div class="list">
-	<ul>
-		<li>Riverdale Collegiate Institute: 2015-2019</li>
-    <li>Toronto Metropolitan University: 2019-Present</li>
-	</ul>
-</div>
+<button class = "button2" onclick="DisplayText()">Click here to enter your name!</button>
 
-<h2>About Me</h2>
-
-<div style="text-align:center">
-<button type="button" onclick="myFunction()">Click here!</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() { 
-  document.getElementById("demo").innerHTML = "I am currently in my 5th year studying for a Bachelor degree majoring in Business Technology Management at Toronto Metropolitan University.";
-}
-</script>
-
-</div>
-
-<h2>Key courses</h2>
-<div class="list">
-	<ol>
-		<li>Systems Analysis and Design</li>
-    <li>Fundamentals of Programing</li>
-    <li>Business Intelligence and Analytics</li>
-    <li>Computer-Enabled Problem Solving</li>
-    <li>Data and Information Management</li>
-	</ol>
-</div>
-<h2>Extra-Curriculars</h2>
-<p> I was a part of the Ultimate Frisbee Team in Highschool and also took part in the Strings Orchestra as a violinist.</p>
-
-<h3>Thank you for visiting!</h3>
-
-</div>
+<p class = "p1" id ="name"></p>
 
 </body>
-
 </html>
