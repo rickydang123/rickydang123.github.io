@@ -18,4 +18,6 @@ function storeData(event) {
     localStorage.setItem("email",email);
     localStorage.setItem("country", country);
     localStorage.setItem("subject", subject);
+
+    alert("Submission Successful")
     }
