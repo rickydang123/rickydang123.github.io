@@ -27,29 +27,48 @@
 
 <div class="container1">
  <form onsubmit="storeData(event)">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" required>
+    <fieldset>
+      <legend>Provide Your Contact Information</legend><br>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" required>
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" required>
+  
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" required>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" required>
+      <label for="country">Country</label>
+      <select id="country" name="country" required>
+        <option value="canada">Canada</option>
+        <option value="usa">United States</option>
+        <option value="Australia">Australia</option>
+        <option value="united kingdon">United Kingdom</option>
+        <option value="other">Other</option>
+      </select>
 
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" required>
+      <label for="occupancy">Occupancy</label><br>
+      <p class ="p2">
+        <input type="radio" value="Full Time" name="choice" checked> Full Time<br>
+        <input type="radio" value="Part Time" name="choice"> Part Time<br>
+        <input type="radio" value="Student" name="choice"> Student<br>
+        <input type="radio" value="Unemployed" name="choice"> Unemployed
+      </p>
+  
+      <label for="Support">Type of Support</label>
+      <p class ="p2">
+        <input type="checkbox" checked> To Connect<br>
+        <input type="checkbox"> Job Opportunities<br>
+        <input type="checkbox"> Resume Inquiries<br>
+        <input type="checkbox"> General Questions
+      </p>
 
-    <label for="country">Country</label>
-    <select id="country" name="country" required>
-      <option value="canada">Canada</option>
-      <option value="usa">United States</option>
-      <option value="Australia">Australia</option>
-      <option value="united kingdon">United Kingdom</option>
-      <option value="other">Other</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" style="height:200px" required></textarea>
-
-    <input type="submit" onclick="storeData(event)">
-    <input type="reset">
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" style="height:200px" required></textarea>
+  
+      <input type="submit" onclick="storeData(event)">
+      <input type="reset">
+    </fieldset>
   </form>
 </div>
 
