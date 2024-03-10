@@ -41,6 +41,9 @@ h3 {
     font-size: 30px;
     color: rgb(179, 159, 134);
 }
+.p2 {
+  font-size: 15px;
+}
 .list {
     display: flex;
     justify-content: center;
@@ -202,6 +205,9 @@ ol {
   }
   .container1 {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f2fb;
     padding: 20px;
+  }
+  input[type=radio] {
+    font-size: 8px;
   }
