@@ -1,8 +1,9 @@
 body {
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    margin: 25px 50px 75px 100px;
+    font-size: 20px;
+    margin: 25px 100px 75px 50px;
+    padding: 0;
 }
 h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -21,6 +22,17 @@ h3 {
     font-size: 60px;
     color: rgb(179, 159, 134);
     text-align: center;
+}
+h4 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+h5 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: black;
 }
 .container {
     display: flex;
@@ -44,14 +56,29 @@ h3 {
 .p2 {
   font-size: 15px;
 }
+.p3 {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin: 0;
+}
+.p4 {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+.p5 {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
 .list {
     display: flex;
     justify-content: center;
     width: 100%;
-    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: rgb(179, 159, 134);
+    font-size: 16px;
+    color: black;
 }
 img {
     max-width: 50%;
@@ -98,13 +125,11 @@ table, th, td {
   }
 table {
     font-family: 'Times New Roman', Times, serif;
-    width: 40%;
     font-size: 20px;
-    text-align: center;
-    font-weight: bold;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold;
     color: rgb(179, 159, 134);
 }
 ul {
@@ -125,7 +150,7 @@ ol {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
   }
 .topnav a:hover, .dropdown:hover .dropbtn  {
     background-color: #ddd;
@@ -146,7 +171,7 @@ ol {
     margin: 0;
 }
 .dropdown {
-    float: left;
+    float: right;
     overflow: hidden;
   }
 .dropdown-content {
@@ -204,10 +229,51 @@ ol {
     background-color: rgb(143, 127, 107);
   }
   .container1 {
+    margin: auto;
     border-radius: 5px;
     background-color: #f2f2f2fb;
     padding: 20px;
+    width: 50%;
   }
   input[type=radio] {
     font-size: 8px;
+  }
+  .custom-button, .custom-button:visited {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      color: rgb(179, 159, 134);
+      font-weight: bold;
+      display: inline-block;
+      padding: 5px 10px;
+  }
+  .custom-button:hover {
+      color: #FFF;
+      text-decoration: none;
+  }
+  .row {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  .column {
+    flex: 0.3;
+    margin: 0 20px;
+    padding: 25px;
+  }
+  .column1 {
+    flex: 0.6;
+    margin: 0 20px;
+    padding: 10px;
+  }
+  .skillset {
+    column-count: 2;
   }
