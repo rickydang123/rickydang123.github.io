@@ -19,6 +19,7 @@ h2 {
 }
 h3 {
     font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
     font-size: 60px;
     color: rgb(179, 159, 134);
     text-align: center;
@@ -277,3 +278,12 @@ ol {
   .skillset {
     column-count: 2;
   }
+  .text-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  width: 200px; /* adjust the image width as needed */
+}
