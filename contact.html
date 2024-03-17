@@ -9,26 +9,19 @@
   <script src="form.js"></script>
 </head>
 
-<h1>Contact Me</h1>
+<a class="custom-button"
+href="index.html">Ricky Dang</a>
 
 <div class="topnav">
-  <a href="index.html">Home</a>
   <a href="about.html">About</a>
-  <div class="dropdown">
-    <button class = "dropbtn">More
-      <i class = "fa fa-caret-down"></i>
-    </button>
-    <div class = "dropdown-content">
-      <a class="active" href ="contact.html">Contact Me</a>
-      <a href ="https://www.linkedin.com/in/rickydang25/">Linkedin</a>
-    </div>
-  </div>  
+  <a class ="active" href="contact.html">Contact</a>
+  <a href="https://www.linkedin.com/in/rickydang25/">Linkedin</a>
 </div>
 
+<h4>Contact</h4>
 <div class="container1">
  <form onsubmit="storeData(event)">
     <fieldset>
-      <legend>Provide Your Contact Information</legend><br>
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" required>
   
@@ -46,22 +39,6 @@
         <option value="united kingdon">United Kingdom</option>
         <option value="other">Other</option>
       </select>
-
-      <label for="occupancy">Occupancy</label><br>
-      <p class ="p2">
-        <input type="radio" value="Full Time" name="choice"> Full Time<br>
-        <input type="radio" value="Part Time" name="choice"> Part Time<br>
-        <input type="radio" value="Student" name="choice"> Student<br>
-        <input type="radio" value="Unemployed" name="choice"> Unemployed
-      </p>
-  
-      <label for="Support">Type of Support</label>
-      <p class ="p2">
-        <input type="checkbox"> To Connect<br>
-        <input type="checkbox"> Job Opportunities<br>
-        <input type="checkbox"> Resume Inquiries<br>
-        <input type="checkbox"> General Questions
-      </p>
 
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" style="height:200px" required></textarea>
