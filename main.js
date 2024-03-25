@@ -22,7 +22,7 @@ function toggleMode() {
     // Change button image based on mode
     const button = document.querySelector('.toggle-btn');
     const currentMode = body.classList.contains('dark-mode') ? 'image/lightmode.png' : 'image/darkmode.png';
-    button.innerHTML = `<img src="${currentMode}" alt="Light Bulb" width="84" height="48">`;
+    button.innerHTML = `<img src="${currentMode}" alt="Dark Mode" width="84" height="48">`;
   }
 
 // Get the button
