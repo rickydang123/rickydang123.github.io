@@ -1,51 +1,61 @@
-function myFunction(){ 
-    document.getElementById("demo").innerHTML = "I am currently in my 5th year studying for a Bachelor degree majoring in Business Technology Management at Toronto Metropolitan University.";
+// Function to smoothly scroll to the top of the page
+function scrollToTop() {
+    // Scroll to the top of the document over 500 milliseconds
+    smoothScrollToTop(500);
 }
 
-function DisplayText(){
-    let person = prompt("Please enter your name", "Enter name here");
-    if (person != null) {
-      document.getElementById("name").innerHTML = "Thank you for visiting " + person + ", hope you enjoyed your stay!";
-    }
-}
+// Function to smoothly scroll to the top of the page over a specified duration
+function smoothScrollToTop(duration) {
+    // Start position of the scroll
+    var start = window.pageYOffset;
+    // Distance to scroll
+    var distance = -start;
+    // Start time of the scroll
+    var startTime = null;
 
-function enlargeImg() {
-    img = document.getElementById("img1")
-    img.style.transform = "scale(1.35)";
-    img.style.transition = "transform 0.25s ease";
-}
-
-function toggleMode() {
-    const body = document.body;
-    body.classList.toggle('dark-mode');
-
-    // Change button image based on mode
-    const button = document.querySelector('.toggle-btn');
-    const currentMode = body.classList.contains('dark-mode') ? 'image/lightmode.png' : 'image/darkmode.png';
-    button.innerHTML = `<img src="${currentMode}" alt="Dark Mode" width="84" height="48">`;
-  }
-
-// Get the button
-    var mybutton = document.getElementById("scrollBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {
-        scrollFunction();
-    };
-
-    function scrollFunction() {
-        if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-        ) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
+    // Animation function
+    function animation(currentTime) {
+        if (startTime === null) {
+            startTime = currentTime;
+        }
+        var timeElapsed = currentTime - startTime;
+        // Calculate the next position using easing function (optional, you can use linear if you want constant speed)
+        var scrollY = easeInOutQuad(timeElapsed, start, distance, duration);
+        // Scroll to the next position
+        window.scrollTo(0, scrollY);
+        // Continue the animation until duration is reached
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
         }
     }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function scrollToTop() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    // Easing function (optional, you can use linear if you want constant speed)
+    function easeInOutQuad(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
     }
+
+    // Request animation frame to start the animation
+    requestAnimationFrame(animation);
+}
+
+// Function to update the button visibility and add/remove 'visible' class
+function updateScrollButton() {
+    var scrollBtn = document.getElementById("scrollBtn");
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+    // Determine if the button should be visible
+    var shouldBeVisible = scrollTop > 20;
+
+    // Add or remove the 'visible' class based on the scroll position
+    if (shouldBeVisible) {
+        scrollBtn.classList.add("visible");
+    } else {
+        scrollBtn.classList.remove("visible");
+    }
+}
+
+// Add event listener for scroll events
+window.addEventListener("scroll", updateScrollButton);

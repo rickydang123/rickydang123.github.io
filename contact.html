@@ -14,9 +14,9 @@
 href="index.html">Ricky Dang</a>
 
 <div class="topnav">
-  <a href="about.html">About</a>
+  <a href="resume.html">Resume</a>
+  <a href="portfolio.html">Portfolio</a>
   <a class ="active" href="contact.html">Contact</a>
-  <a href="https://www.linkedin.com/in/rickydang25/">Linkedin</a>
 </div>
 
 <h4>Contact</h4>
@@ -24,22 +24,13 @@ href="index.html">Ricky Dang</a>
  <form onsubmit="storeData(event)">
     <fieldset>
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" required>
+      <input type="text" id="fname" name="firstname" value="Name" required>
   
       <label for="lname">Last Name</label>
       <input type="text" id="lname" name="lastname" required>
   
       <label for="email">Email</label>
       <input type="text" id="email" name="email" required>
-
-      <label for="country">Country</label>
-      <select id="country" name="country" required>
-        <option value="canada">Canada</option>
-        <option value="usa">United States</option>
-        <option value="Australia">Australia</option>
-        <option value="united kingdon">United Kingdom</option>
-        <option value="other">Other</option>
-      </select>
 
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" style="height:200px" required></textarea>
@@ -50,14 +41,17 @@ href="index.html">Ricky Dang</a>
   </form>
 </div>
 
-<body class="dark-mode">
-  <button class="toggle-btn" onclick="toggleMode()">
-    <img src="image/lightmode.png" alt="Light Bulb" width="84" height="48">
-  </button>
-
-</body>
-</html>
-
-</body>
+<footer class="footer-fixed">
+  <div class="footer-content">
+    <p class="footer-text">
+      <span class="footer-phone">Phone: <br> 123-456-7890</a></span>
+      <span class="footer-email">Email: <br> rickydang2001@gmail.com</a></span>
+      <span class="footer-social"> Follow me <br> 
+        <a href="https://www.linkedin.com/in/rickydang25/" target="_blank"><img src="image/LinkedIn Icon.webp" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/ricky.dang.984/" target="_blank"><img src="image/Facebook Icon.webp" alt="Facebook"></a>    
+      </span>
+    </p>
+  </div>
+</footer>
 
 </html>

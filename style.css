@@ -1,37 +1,78 @@
 body {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    background-color: #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
     margin: 25px 100px 75px 50px;
     padding: 0;
+    color: white;
 }
+
+.footer-line {
+  border-top: 1px solid #ccc;
+}
+
+.footer-fixed {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 50px;
+  background-color: #333;
+  border-top: 1px solid #dee2e6;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  z-index: 1000; /* Adjust z-index as needed */
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px; /* Limit maximum width */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.footer-phone, .footer-email, .footer-social {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-social a {
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+
 h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
-    color: rgb(179, 159, 134);
+    color: white;
 }
 h2 {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
     color: rgb(255, 255, 255);
     margin: 10px 25px 10px 25px
 }
 h3 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 20px;
+    margin-top: 10px;
     font-size: 60px;
-    color: rgb(179, 159, 134);
-    text-align: center;
+    color: white;
+    margin-bottom: 10px;
 }
 h4 {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 25px;
   color: rgb(255, 255, 255);
 }
 h5 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
   color: black;
 }
@@ -41,55 +82,65 @@ h5 {
     justify-content: center;
 }
 .p {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: rgb(179, 159, 134)
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;
 }
 .p1 {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 30px;
-    color: rgb(179, 159, 134);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: white;
 }
 .p2 {
-  font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 .p3 {
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  margin: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
 }
 .p4 {
-  font-size: 18px;
-  font-family: 'Times New Roman', Times, serif;
-  margin: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 .p5 {
-  font-size: 18px;
-  font-family: 'Times New Roman', Times, serif;
-  margin: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 .list {
     display: flex;
     justify-content: center;
     width: 100%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: black;
 }
-img {
-    max-width: 50%;
-    max-height: 25%;
-    display: inline;
-    float: right;
+.image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
 }
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .button1 {
     background-color: rgb(40, 42, 43);
-    color: rgb(179, 159, 134);
+    color: white;
     font-weight: bold;
     display: block;
     margin-left: auto;
@@ -120,19 +171,6 @@ a:active {
     text-decoration: underline;
     color: #926c44;
   }
-table, th, td {
-    border: 2px solid rgb(179, 159, 134);
-    border-collapse: collapse;
-  }
-table {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
-    color: rgb(179, 159, 134);
-}
 ul {
     list-style-type: square;
     height: 30px;
@@ -142,25 +180,29 @@ ol {
     height: 100px;
 }
 .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-  }
-.topnav a:hover, .dropdown:hover .dropbtn  {
-    background-color: #ddd;
-    color: black;
-  }
-.topnav a.active {
-    background-color: rgb(179, 159, 134);
-    color: white;
+  background-color: #333;
+  overflow: hidden;
 }
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 13px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-right: 1px solid #bbb;
+}
+
+.topnav a:last-child {
+  border-right: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 .dropdown .dropbtn {
     font-size: 16px;  
     border: none;
@@ -241,9 +283,9 @@ ol {
     font-size: 8px;
   }
   .custom-button, .custom-button:visited {
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 25px;
-      color: rgb(179, 159, 134);
+      color: white;
       font-weight: bold;
       display: inline-block;
       padding: 5px 10px;
@@ -261,7 +303,6 @@ ol {
     display: flex;
     flex-direction: row;
     align-items: center;
-
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -310,22 +351,37 @@ ol {
   cursor: pointer;
 }
 
-/* Styles for the scroll button */
 #scrollBtn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 99;
-  background-color: rgb(204, 204, 204);
-  color: #333;
+  background-color: #999; /* Button background color (gray) */
+  color: #fff; /* Button text color */
   border: none;
-  border-radius: 50%;
-  padding: 10px;
+  border-radius: 50%; /* Rounded shape */
+  width: 50px; /* Decreased button width */
+  height: 50px; /* Decreased button height */
+  font-size: 28px; /* Decreased font size */
   cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  font-size: 21px; /* Adjust font size as needed */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  z-index: 999; /* Ensure it's above other elements */
+  /* Other button styles */
+  opacity: 0; /* Initial opacity */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
 
 #scrollBtn:hover {
-  background-color: rgb(138, 138, 138)
+  background-color: #777; /* Darker gray color on hover */
+}
+
+#scrollBtn span {
+  display: block;
+  font-size: 24px; /* Adjust font size */
+  margin-top: 5px; /* Adjust vertical alignment */
+  line-height: 1; /* Ensure arrow is vertically centered */
+  font-weight: bold; /* Make the arrow thicker */
+}
+
+#scrollBtn.visible {
+  opacity: 1; /* Fully visible when the 'visible' class is added */
 }
