@@ -26,7 +26,7 @@ body {
 .footer-text {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px; /* Limit maximum width */
+  max-width: 950px; /* Limit maximum width */
   margin: 0 auto; /* Center horizontally */
 }
 
@@ -77,6 +77,8 @@ h5 {
   color: black;
 }
 .container {
+    margin-top: 300px;
+    margin-bottom: 230px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,22 +157,6 @@ h5 {
     margin-left: auto;
     margin-right: auto;
 }
-a:link {
-    text-decoration: none;
-    color: #e1e3e2;
-  }
-a:visited {
-    text-decoration: none;
-    color: #221e1c;
-  }
-a:hover {
-    text-decoration: underline;
-    color: #b4a79e;
-  }
-a:active {
-    text-decoration: underline;
-    color: #926c44;
-  }
 ul {
     list-style-type: square;
     height: 30px;
@@ -179,28 +165,54 @@ ol {
     list-style-type: upper-roman;
     height: 100px;
 }
-.topnav {
+
+header {
   background-color: #333;
-  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 70px; /* Adjusted height of the header */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.custom-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-button:hover {
+  color: #858585;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
 }
 
 .topnav a {
-  float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 13px 16px;
   text-decoration: none;
   font-size: 17px;
-  border-right: 1px solid #bbb;
 }
 
-.topnav a:last-child {
-  border-right: none;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.content {
+  padding-top: 100px; /* Same value as the height of the header */
 }
 
 .dropdown .dropbtn {
@@ -282,18 +294,7 @@ ol {
   input[type=radio] {
     font-size: 8px;
   }
-  .custom-button, .custom-button:visited {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      font-size: 25px;
-      color: white;
-      font-weight: bold;
-      display: inline-block;
-      padding: 5px 10px;
-  }
-  .custom-button:hover {
-      color: #FFF;
-      text-decoration: none;
-  }
+  
   .row {
     background-color: white;
     color: black;
@@ -319,8 +320,21 @@ ol {
     padding: 10px;
   }
   .skillset {
-    column-count: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
+  .skillset ul {
+    list-style-type: none;
+    padding: 0;
+    width: 45%; /* Adjust this value according to your preference */
+  }
+
+  .skillset li {
+    margin-bottom: 10px; /* Adjust this value according to your preference */
+  }
+
   .text-image-container {
   display: flex;
   align-items: center;
@@ -329,26 +343,6 @@ ol {
 
 .image-container {
   width: 200px; /* adjust the image width as needed */
-}
-
-/* Light Mode Styles */
-.light-mode {
-  background-color: #f5f5f5;
-  color: #333;
-}
-    
-/* Dark Mode Styles */
-.dark-mode {
-  background-color: #333;
-  color: #f5f5f5;
-}
-.toggle-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
 }
 
 #scrollBtn {

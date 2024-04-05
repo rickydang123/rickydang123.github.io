@@ -4,34 +4,36 @@
 <head>    
   <meta charset="UTF-8">
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="main.js"></script>
+  <title>Ricky's Portfolio</title>
 </head>
 
-<a class="custom-button"
-href="index.html">Ricky Dang</a>
-
-<div class="topnav">
-  <a href="resume.html">Resume</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="contact.html">Contact</a>
-</div>
+<header>
+  <div class="header-container">
+    <a class="custom-button" href="index.html">Ricky Dang</a>
+    <div class="topnav">
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
 
 <body>
-<div class = "container">
-  <div class = "image">
-  <img src="image/Linkedin.jpg" alt = "LinkedIn Profile" id = "img1" />
+<section id="home">
+  <div class = "container">
+    <div class = "image">
+    <img src="image/Linkedin.jpg" alt = "LinkedIn Profile" id = "img1" />
+    </div>
+    <div class = "text">
+      <p class = "p">Welcome</p>
+      <h3>I'm Ricky Dang</h3>
+      <p class = "p1">I am currently enrolled as a fifth-year student <br> in the Business Technology Management program <br> pursuing a Bachelor's degree in Commerce</p>
+    </div>
   </div>
-  <div class = "text">
-    <p class = "p">Hello, I'm</p>
-    <h3>Ricky Dang</h3>
-    <p class = "p1">I am currently enrolled as a fifth-year student <br> in the Business Technology Management program <br> pursuing a Bachelor's degree in Commerce</p>
-  </div>
-</div>
-<!-- Button to link to the PDF file -->
-<button onclick="window.location.href = '///C:/Users/ricky/OneDrive/Desktop/Ryerson%20Folder/COOP/Ricky_Dang_Resume%20Fall%202023.pdf';">Download PDF</button>
-</body>
+</section>
 
 <footer class="footer-fixed">
   <div class="footer-content">
@@ -45,6 +47,10 @@ href="index.html">Ricky Dang</a>
     </p>
   </div>
 </footer>
+
+<button id="scrollBtn" onclick="scrollToTop()">
+  <span>&uarr;</span>
+</button>
 </html>
 
 

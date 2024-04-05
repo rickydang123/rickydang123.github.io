@@ -59,3 +59,22 @@ function updateScrollButton() {
 
 // Add event listener for scroll events
 window.addEventListener("scroll", updateScrollButton);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.topnav a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                const headerHeight = document.querySelector('header').offsetHeight; // Get the height of the fixed header
+                window.scrollTo({
+                    top: targetSection.offsetTop - headerHeight, // Adjust scroll position by subtracting header height
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
