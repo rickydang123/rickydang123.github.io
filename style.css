@@ -1,24 +1,31 @@
-body {
-    background-color: #333;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
-    margin: 25px 100px 75px 50px;
-    padding: 0;
-    color: white;
+/* Resetting defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Base Styles */
+body {
+  background-color: #333;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+/* Footer Styles */
 .footer-line {
   border-top: 1px solid #ccc;
 }
 
-.footer-fixed {
+.footer {
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 1rem;
   margin-top: 50px;
-  background-color: #333;
-  border-top: 1px solid #dee2e6;
+  background-color: rgb(24, 24, 24);
   box-sizing: border-box; /* Ensure padding is included in the width */
   z-index: 1000; /* Adjust z-index as needed */
 }
@@ -44,130 +51,123 @@ body {
   height: 24px;
 }
 
+/* Heading Styles */
+h1, h2, h3, h4, h5 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    color: white;
-}
 h2 {
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    margin: 10px 25px 10px 25px
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 10px 25px;
 }
+
 h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 20px;
-    margin-top: 10px;
-    font-size: 60px;
-    color: white;
-    margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 10px;
 }
+
 h4 {
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 25px;
   color: rgb(255, 255, 255);
 }
+
 h5 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
-  color: black;
 }
+
+/* Full-screen and Container Styles */
+.full-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
-    margin-top: 300px;
-    margin-bottom: 244px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  height: 100%;
 }
-.p {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    color: white;
+
+.text {
+  justify-content: center;
+  align-items: center;
 }
-.p1 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    font-size: 17px;
-    color: white;
+
+.container .text {
+  margin-top: 20vh;
 }
-.p2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.p3 {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin: 0;
-}
-.p4 {
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-.p5 {
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-.list {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: black;
-}
+
 .image {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
   overflow: hidden;
   border-radius: 50%;
+  border: 6px solid black;
+  display: flex;
+  position: relative;
+  margin-top: 15px;
 }
 
-.image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* Paragraph Styles */
+.p, .p1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-.button1 {
-    background-color: rgb(40, 42, 43);
-    color: white;
-    font-weight: bold;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.p {
+  font-size: 35px;
+  color: white;
 }
-.button2 {
-    background-color: rgb(40, 42, 43);
-    color: rgb(179, 159, 134);
-    font-weight: bold;
-    display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+
+.p1 {
+  font-size: 20px;
+  color: white;
 }
+
+.p2, .p3, .p4, .p5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p2 {
+  font-size: 15px;
+}
+
+.p3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.p4, .p5 {
+  font-size: 18px;
+}
+
+/* List Styles */
 ul {
-    list-style-type: square;
-    height: 30px;
-}
-ol {
-    list-style-type: upper-roman;
-    height: 100px;
+  list-style-type: square;
+  height: 30px;
 }
 
+ol {
+  list-style-type: upper-roman;
+  height: 100px;
+}
+
+/* Header Styles */
 header {
-  background-color: #333;
+  background-color: rgb(24, 24, 24);
   width: 100%;
   position: fixed;
   top: 0;
@@ -186,7 +186,6 @@ header {
 }
 
 .custom-button {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   color: white;
   padding: 5px 10px;
@@ -205,177 +204,166 @@ header {
 
 .topnav a {
   color: #f2f2f2;
-  text-align: center;
   padding: 13px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .content {
-  padding-top: 100px; /* Same value as the height of the header */
+  padding-top: 70px; /* Same value as the height of the header */
 }
 
-.dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
+/* Form Styles */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
-.dropdown {
-    float: right;
-    overflow: hidden;
-  }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  input[type=submit] {
-    background-color: rgb(179, 159, 134);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  input[type=submit]:hover {
-    background-color: rgb(143, 127, 107);
-  }
-  input[type=reset] {
-    background-color: rgb(179, 159, 134);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  input[type=reset]:hover {
-    background-color: rgb(143, 127, 107);
-  }
-  .container1 {
-    color: black;
-    margin: auto;
-    border-radius: 5px;
-    background-color: #f2f2f2fb;
-    padding: 20px;
-    width: 50%;
-  }
-  input[type=radio] {
-    font-size: 8px;
-  }
-  
-  .row {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    border: 1px solid black;
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    
-  }
-  .column {
-    flex: 0.3;
-    margin: 0 20px;
-    padding: 25px;
-  }
-  .column1 {
-    flex: 0.6;
-    margin: 0 20px;
-    padding: 10px;
-  }
-  .skillset {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 
-  .skillset ul {
-    list-style-type: none;
-    padding: 0;
-    width: 45%; /* Adjust this value according to your preference */
-  }
+input[type=submit], input[type=reset] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-  .skillset li {
-    margin-bottom: 10px; /* Adjust this value according to your preference */
-  }
+input[type=submit] {
+  background-color: rgb(179, 159, 134);
+  color: white;
+}
 
-  .text-image-container {
+input[type=submit]:hover {
+  background-color: rgb(143, 127, 107);
+}
+
+input[type=reset] {
+  background-color: rgb(179, 159, 134);
+  color: white;
+}
+
+input[type=reset]:hover {
+  background-color: rgb(143, 127, 107);
+}
+
+/* Container1 Styles */
+.container1 {
+  color: black;
+  margin: auto;
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+}
+
+/* Row and Column Styles */
+.row {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.column, .column1 {
+  margin: 0 20px;
+  padding: 25px;
+}
+
+.skillset {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.text-image-container {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.image-container {
-  width: 200px; /* adjust the image width as needed */
 }
 
 #scrollBtn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #999; /* Button background color (gray) */
-  color: #fff; /* Button text color */
+  background-color: #8d8b8b; 
+  color: #fff; 
   border: none;
-  border-radius: 50%; /* Rounded shape */
-  width: 50px; /* Decreased button width */
-  height: 50px; /* Decreased button height */
-  font-size: 28px; /* Decreased font size */
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px; 
+  font-size: 28px; 
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
-  z-index: 999; /* Ensure it's above other elements */
-  /* Other button styles */
-  opacity: 0; /* Initial opacity */
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  transition: background-color 0.3s ease; 
+  z-index: 999; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 #scrollBtn:hover {
-  background-color: #777; /* Darker gray color on hover */
+  background-color: #666666; 
 }
 
 #scrollBtn span {
   display: block;
-  font-size: 24px; /* Adjust font size */
-  margin-top: 5px; /* Adjust vertical alignment */
-  line-height: 1; /* Ensure arrow is vertically centered */
-  font-weight: bold; /* Make the arrow thicker */
+  font-size: 24px; 
+  margin-top: 5px; 
+  line-height: 1; 
+  font-weight: bold; 
 }
 
 #scrollBtn.visible {
-  opacity: 1; /* Fully visible when the 'visible' class is added */
+  opacity: 1; 
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  margin-bottom: 1px;
+}
+
+.contact-container .form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.contact-container .form-group:last-child {
+  margin-right: 0;
+}
+
+.contact-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#about {
+  padding: 50px;
+  position: relative;
+}
+
+#resume {
+  padding: 50px;
+  position: relative;
+}
+
+#portfolio {
+  padding: 50px;
+  position: relative;
+}
+
+#contact {
+  padding: 50px;
+  position: relative;
 }
