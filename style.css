@@ -1,11 +1,9 @@
-/* Resetting defaults */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base Styles */
 body {
   background-color: #333;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -14,7 +12,6 @@ body {
   text-align: center;
 }
 
-/* Footer Styles */
 .footer-line {
   border-top: 1px solid #ccc;
 }
@@ -26,15 +23,15 @@ body {
   padding: 1rem;
   margin-top: 50px;
   background-color: rgb(24, 24, 24);
-  box-sizing: border-box; /* Ensure padding is included in the width */
-  z-index: 1000; /* Adjust z-index as needed */
+  box-sizing: border-box; 
+  z-index: 1000; 
 }
 
 .footer-text {
   display: flex;
   justify-content: space-between;
-  max-width: 950px; /* Limit maximum width */
-  margin: 0 auto; /* Center horizontally */
+  max-width: 950px; 
+  margin: 0 auto; 
 }
 
 .footer-phone, .footer-email, .footer-social {
@@ -51,7 +48,6 @@ body {
   height: 24px;
 }
 
-/* Heading Styles */
 h1, h2, h3, h4, h5 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -63,8 +59,6 @@ h2 {
 }
 
 h3 {
-  margin-left: 20px;
-  margin-top: 10px;
   font-size: 60px;
   color: white;
   margin-bottom: 10px;
@@ -72,6 +66,7 @@ h3 {
 
 h4 {
   text-align: center;
+  font-size: 25px;
   color: rgb(255, 255, 255);
 }
 
@@ -79,7 +74,6 @@ h5 {
   font-size: 20px;
 }
 
-/* Full-screen and Container Styles */
 .full-screen {
   height: 100vh;
   display: flex;
@@ -118,11 +112,8 @@ h5 {
   margin-top: 15px;
 }
 
-/* Paragraph Styles */
-.p, .p1 {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 20px;
-  margin-top: 25px;
+.p, .p1, .p2, .p3, .p4, .p5 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-bottom: 10px;
 }
 
@@ -134,10 +125,6 @@ h5 {
 .p1 {
   font-size: 20px;
   color: white;
-}
-
-.p2, .p3, .p4, .p5 {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .p2 {
@@ -210,10 +197,9 @@ header {
 }
 
 .content {
-  padding-top: 70px; /* Same value as the height of the header */
+  padding-top: 70px;
 }
 
-/* Form Styles */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -250,7 +236,6 @@ input[type=reset]:hover {
   background-color: rgb(143, 127, 107);
 }
 
-/* Container1 Styles */
 .container1 {
   color: black;
   margin: auto;
@@ -259,7 +244,6 @@ input[type=reset]:hover {
   width: 50%;
 }
 
-/* Row and Column Styles */
 .row {
   background-color: white;
   color: black;
