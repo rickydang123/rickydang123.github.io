@@ -20,6 +20,11 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-size: 40px;
+  color: white;
+}
+
 h2 {
   text-align: center;
   color: rgb(255, 255, 255);
