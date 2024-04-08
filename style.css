@@ -46,7 +46,7 @@ h3::after {
   left: 50%;
   transform: translateX(-50%);
   bottom: -2px;
-  width: 60%;
+  width: 80%;
   height: 2px;
   background-color: rgb(255, 255, 255);
 }
