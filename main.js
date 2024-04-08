@@ -1,7 +1,12 @@
-// Function to smoothly scroll to the top of the page
+// Scroll to the top of the page
 function scrollToTop() {
-    // Scroll to the top of the document over 500 milliseconds
+    document.documentElement.style.scrollBehavior = 'auto';
+
     smoothScrollToTop(500);
+
+    setTimeout(() => {
+        document.documentElement.style.scrollBehavior = 'smooth';
+    }, 1000);
 }
 
 // Function to smoothly scroll to the top of the page over a specified duration
@@ -78,3 +83,41 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+  
+// Function to add floating animation to elements when they enter the viewport
+function addFloatInAnimation() {
+    const floatInSectionElements = document.querySelectorAll('.float-in-section');
+  
+    function checkFloatIn() {
+      floatInSectionElements.forEach((element) => {
+        if (isInViewport(element)) {
+          element.classList.add('is-visible');
+        }
+      });
+    }
+  
+    window.addEventListener('scroll', checkFloatIn);
+    window.addEventListener('resize', checkFloatIn);
+  }
+  
+  // Call the function when the DOM content is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    addFloatInAnimation();
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var homeSection = document.getElementById('home');
+    homeSection.classList.remove('hidden'); // Remove the 'hidden' class to make the section visible
+  });
+  
