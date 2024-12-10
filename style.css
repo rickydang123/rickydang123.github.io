@@ -420,15 +420,15 @@ input[type=reset]:hover {
 }
 
 .skill-html {
-  width: 75%;
+  width: 65%;
 }
 
 .skill-css {
-  width: 70%;
+  width: 65%;
 }
 
-.skill-js {
-  width: 65%;
+.skill-sql {
+  width: 75%;
 }
 
 .skill-tableau {
